@@ -170,7 +170,7 @@ Possui uma luz do tipo Point Light posicionada sobre ele, com as seguintes carac
 
 ## Componentes e Hierarquia
 
-Jogador (Capsule)
+### Jogador (Capsule)
 
 ├── Main Camera
 
@@ -182,17 +182,19 @@ Jogador (Capsule)
 
 ├── DestruirComClique (script)
 
+![Jogador na cena](https://github.com/user-attachments/assets/c414e917-89de-4e54-8e62-4791b6592dae)
+
 ![Jogador](https://github.com/user-attachments/assets/5a5c39ab-da12-4d20-bdb0-29d6f32c7f05)
 
 
-Canvas (Overlay)
+### Canvas (Overlay)
 
 └── MiraTexto (Text)
 
 ![Mira](https://github.com/user-attachments/assets/eb01e56a-9147-40e8-b643-f48f2b372bab)
 
 
-Sapo (Prefab)
+### Sapo (Prefab)
 
 └── Luz (Point Light)
 
@@ -201,7 +203,7 @@ Directional Light (Cor azul voltada para cima)
 ![Sapo](https://github.com/user-attachments/assets/957ee313-183a-4683-88e0-8dd8ff9bbf3f)
 
 
-Terreno (Prefab)
+### Terreno (Prefab)
 
 └── Box collider
 
