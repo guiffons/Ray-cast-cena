@@ -2,8 +2,8 @@
 #  Ray Cast - Cena de Captura de Sapos no Unity
 
 ###  Integrantes  
-- Guilherme Fonseca da Silva — Programação, lógica de jogo e implementação da mira (Canvas)  
-- Kevin Novais Bezerra — Pesquisa e integração de prefabs, documentação
+- Guilherme Fonseca da Silva 
+- Kevin Novais Bezerra
 
 ###  Série  
 3º Ano — Programação de Jogos Digitais
