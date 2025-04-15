@@ -27,6 +27,6 @@ A cor, tamanho e fonte do ponto foram ajustados para garantir boa visibilidade.
 
 <h3>Função</h3>
 
-Kevin:
-
 Guilherme:
+
+Kevin:
