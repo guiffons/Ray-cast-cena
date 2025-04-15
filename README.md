@@ -195,12 +195,13 @@ Possui uma luz do tipo Point Light posicionada sobre ele, com as seguintes carac
 
 
 ### Sapo (Prefab)
+└── Luz (Point Light da cor branca)
 
-└── Luz (Point Light)
+![Sapo](https://github.com/user-attachments/assets/957ee313-183a-4683-88e0-8dd8ff9bbf3f) 
 
-Directional Light (Cor azul voltada para cima)
+### Directional Light (Cor azul voltada para cima)
 
-![Sapo](https://github.com/user-attachments/assets/957ee313-183a-4683-88e0-8dd8ff9bbf3f)
+![Luz](https://github.com/user-attachments/assets/0218359f-d1e3-470e-8d7b-5fc76b5ec7f3)
 
 
 ### Terreno (Prefab)
