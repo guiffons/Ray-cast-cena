@@ -220,4 +220,4 @@ Kevin Novais Bezerra: Pesquisa e organização dos prefabs, documentação do pr
 
 ## Link da cena e vídeo (Drive)
 
-- https://drive.google.com/file/d/1Mj1dCm5vwm5JLlrQsjsccMGW2e_u87a8/view?usp=sharing
+- https://drive.google.com/drive/folders/1-4U9N9VJklhcZa6sE8ClUlSBih5z6Ipd?usp=sharing
