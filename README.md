@@ -27,6 +27,10 @@ A cor, tamanho e fonte do ponto foram ajustados para garantir boa visibilidade.
 
 <h3>Prefabs Utilizados:</h3>
 
+https://sketchfab.com/3d-models/woods-and-mountains-16b25ba0bfc94bb1862dc52f3964f99f
+
+https://sketchfab.com/3d-models/tiny-frog-c25c8980b93a460aa521ae62d3d94e0e
+
 <h3>Função</h3>
 
 Guilherme:
