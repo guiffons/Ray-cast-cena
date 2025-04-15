@@ -9,7 +9,7 @@
 é filha do GameObject player, criamos o scripty "Raycast" que com botão esquerdo do mouse lança um raio e se o GameObject atingido tiver a tag sapo ele será destruido.
 
 
-Para representar a mira do jogador de forma minimalista, foi criado um Canvas no Unity contendo apenas um texto centralizado com um ponto ".". Esse ponto funciona como uma mira simples, posicionada no centro da tela para ajudar o jogador a mirar nos objetos do jogo, como inimigos ou itens interativos.
+- Para representar a mira do jogador de forma minimalista, foi criado um Canvas no Unity contendo apenas um texto centralizado com um ponto ".". Esse ponto funciona como uma mira simples, posicionada no centro da tela para ajudar o jogador a mirar nos objetos do jogo, como inimigos ou itens interativos.
 
 O procedimento foi:
 
