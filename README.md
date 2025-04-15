@@ -7,7 +7,6 @@
 
 ###  Série  
 3º Ano — Programação de Jogos Digitais
-
 ---
 
 ##  Sobre o Projeto
@@ -115,7 +114,6 @@ public class DestruirComClique : MonoBehaviour
 
 Para representar uma mira simples, foi criado um Canvas do tipo Screen Space - Overlay contendo apenas um Text centralizado com um ponto final ".", funcionando como uma mira discreta.
 
-
 ![Print do canvas](https://github.com/user-attachments/assets/8f6c1e4f-7b94-4cd0-af9e-c6db33944b97)
 
 Configurações:
@@ -129,7 +127,6 @@ Configurações:
 - Cor: branca
 
 - Objeto de texto posicionado no centro da tela
-
 
 ---
 
@@ -149,21 +146,57 @@ Configurações:
 - https://sketchfab.com/3d-models/woods-and-mountains-16b25ba0bfc94bb1862dc52f3964f99f
 - https://sketchfab.com/3d-models/tiny-frog-c25c8980b93a460aa521ae62d3d94e0e
 
+## Iluminação da Cena
+
+Para criar uma ambientação noturna no jogo, foi utilizada uma luz direcional (Directional Light) com algumas configurações específicas:
+
+- Direção da luz: voltada para cima, simulando a ausência de luz solar direta.
+
+- Cor da luz: azul escuro, reforçando a sensação de noite.
+
+- Intensidade: reduzida, para manter o clima escuro e dar destaque aos elementos iluminados da cena.
+
+## Iluminação do sapo
+
+Possui uma luz do tipo Point Light posicionada sobre ele, com as seguintes características:
+
+- Cor da luz: branca, para contrastar com o cenário escuro.
+
+- Função: facilitar a visualização dos sapos à distância e destacar sua presença no ambiente.
+
+- Alcance e intensidade: ajustados para iluminar o sapo de forma suave, sem interferir muito no restante do cenário.
   
 ---
 
 ## Componentes e Hierarquia
 
 Jogador (Capsule)
-├── Rigidbody
+├── Main Camera
 ├── Capsule Collider
-├── MovimentacaoJogador.cs
-├── DestruirComClique.cs
-└── Camera (filha da cápsula)
+├── Rigidbody
+├── MovimentacaoJogador (script)
+├── DestruirComClique (script)
 
-Canvas
-└── Text (mira ".")
+![Jogador](https://github.com/user-attachments/assets/5a5c39ab-da12-4d20-bdb0-29d6f32c7f05)
 
+
+Canvas (Overlay)
+└── MiraTexto (Text)
+
+![Mira](https://github.com/user-attachments/assets/eb01e56a-9147-40e8-b643-f48f2b372bab)
+
+
+Sapo (Prefab)
+└── Luz (Point Light)
+Directional Light (Cor azul voltada para cima)
+
+![Sapo](https://github.com/user-attachments/assets/957ee313-183a-4683-88e0-8dd8ff9bbf3f)
+
+
+Terreno (Prefab)
+└── Box collider
+
+![Terreno](https://github.com/user-attachments/assets/3deb25da-a0ea-4c2e-9b20-959edf0d6a5d)
 
 ---
 
@@ -172,3 +205,7 @@ Canvas
 Guilherme Fonseca da Silva: Programação do jogador e raycast, implementação da mira com Canvas, organização geral da lógica de jogo.
 
 Kevin Novais Bezerra: Pesquisa e organização dos prefabs, documentação do projeto.
+
+## Link da cena e vídeo (Drive)
+
+- https://drive.google.com/file/d/1Mj1dCm5vwm5JLlrQsjsccMGW2e_u87a8/view?usp=sharing
