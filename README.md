@@ -1,12 +1,39 @@
-# Ray-cast-cena
 
-<h3>Integrantes: Guilherme Fonseca da Silva,Kevin Novais Bezerra</h3>
+#  Ray Cast - Cena de Captura de Sapos no Unity
 
-<h3>Série: 3º Ano Programação de Jogos Digitais</h3>
-<br>
-<h3>Explicação do Código</h3>
-Criamos a classe "Jogador", com atributos de Vector3  mover, Vector3 girar, e foram adicionados métodos de movimento e rotação,a câmera é filha do GameObject jogador o GameObject do jogador é uma cápsula pega no próprio unity e deixamos ela transparente.
+###  Integrantes  
+- Guilherme Fonseca da Silva — Programação, lógica de jogo e implementação da mira (Canvas)  
+- Kevin Novais Bezerra — Pesquisa e integração de prefabs, documentação
 
+###  Série  
+3º Ano — Programação de Jogos Digitais
+
+---
+
+##  Sobre o Projeto
+
+Este projeto consiste em uma cena interativa desenvolvida no Unity, em primeira pessoa, onde o jogador utiliza a técnica de **Ray Cast** para capturar (destruir) sapos posicionados no cenário. A mecânica foi feita com scripts simples, mas que demonstram na prática a aplicação do Ray Cast em jogabilidade, além de movimentação de personagem e interface básica.
+
+---
+
+##  Como funciona
+
+### Visão em Primeira Pessoa  
+O jogador é representado por um **GameObject do tipo cápsula**, com um **material transparente** aplicado. Uma **Câmera** é filha desse objeto, criando o efeito de visualização em primeira pessoa.
+
+#### Componentes da cápsula:
+- Rigidbody  
+- Capsule Collider  
+- Script `MovimentacaoJogador`  
+- Script `DestruirComClique`  
+
+---
+
+##  Script de Movimentação (`MovimentacaoJogador.cs`)
+
+Este script controla o movimento e a rotação do jogador com teclado e mouse. A câmera é controlada pelo eixo vertical do mouse, enquanto o jogador gira no eixo horizontal.
+
+```csharp
 using UnityEngine;
 
 public class MovimentacaoJogador : MonoBehaviour
@@ -49,9 +76,13 @@ public class MovimentacaoJogador : MonoBehaviour
         rb.MovePosition(rb.position + movimento);
     }
 }
+```
 
+## Script de Ray Cast (DestruirComClique.cs)
 
-Criamos o scripty "Raycast" que com botão esquerdo do mouse lança um raio e se o GameObject atingido tiver a tag sapo ele será destruido.
+Este script utiliza um raycast que parte da câmera (centro da tela) e, ao clicar com o botão esquerdo do mouse, verifica se colidiu com algum objeto com a tag "Sapo". Se sim, o objeto é destruído.
+
+```csharp
 
 using UnityEngine;
 
@@ -76,29 +107,68 @@ public class DestruirComClique : MonoBehaviour
     }
 }
 
+```
 
-Para representar a mira do jogador de forma minimalista, foi criado um Canvas no Unity contendo apenas um texto centralizado com um ponto ".". Esse ponto funciona como uma mira simples, posicionada no centro da tela para ajudar o jogador a mirar nos objetos do jogo, como inimigos ou itens interativos.
+---
 
-O procedimento foi:
+## Mira com Canvas
 
-Criado um Canvas do tipo Screen Space - Overlay.
+Para representar uma mira simples, foi criado um Canvas do tipo Screen Space - Overlay contendo apenas um Text centralizado com um ponto final ".", funcionando como uma mira discreta.
 
-Adicionado um objeto de Texto (Text ou TextMeshPro) como filho do Canvas.
 
-O texto foi posicionado no centro da tela com alinhamento central.
+![Print do canvas](https://github.com/user-attachments/assets/8f6c1e4f-7b94-4cd0-af9e-c6db33944b97)
 
-O conteúdo do texto é apenas um ".", funcionando como uma mira discreta.
+Configurações:
 
-A cor, tamanho e fonte do ponto foram ajustados para garantir boa visibilidade.
+- Alinhamento: centralizado
 
-<h3>Prefabs Utilizados:</h3>
+- Texto: "."
 
-https://sketchfab.com/3d-models/woods-and-mountains-16b25ba0bfc94bb1862dc52f3964f99f
+- Tamanho ajustado para boa visibilidade
 
-https://sketchfab.com/3d-models/tiny-frog-c25c8980b93a460aa521ae62d3d94e0e
+- Cor: branca
 
-<h3>Função</h3>
+- Objeto de texto posicionado no centro da tela
 
-Guilherme:
 
-Kevin:
+---
+
+## Prefabs Utilizados
+
+### Sapos
+
+![Print do sapo](https://github.com/user-attachments/assets/b56a052a-797a-4f22-9694-a58d3ba63744)
+- Os sapos foram posicionados manualmente no cenário como alvos para o jogador.
+### Cenário
+
+ ![Print do cenário](https://github.com/user-attachments/assets/3a32a011-2f71-49ae-b17f-aba9098e70ab)
+- Um prefab de uma floresta simples para ser o cenário da cena.
+
+### Links dos prefabs:
+
+- https://sketchfab.com/3d-models/woods-and-mountains-16b25ba0bfc94bb1862dc52f3964f99f
+- https://sketchfab.com/3d-models/tiny-frog-c25c8980b93a460aa521ae62d3d94e0e
+
+  
+---
+
+## Componentes e Hierarquia
+
+Jogador (Capsule)
+├── Rigidbody
+├── Capsule Collider
+├── MovimentacaoJogador.cs
+├── DestruirComClique.cs
+└── Camera (filha da cápsula)
+
+Canvas
+└── Text (mira ".")
+
+
+---
+
+## Funções dos Integrantes
+
+Guilherme Fonseca da Silva: Programação do jogador e raycast, implementação da mira com Canvas, organização geral da lógica de jogo.
+
+Kevin Novais Bezerra: Pesquisa e organização dos prefabs, documentação do projeto.
