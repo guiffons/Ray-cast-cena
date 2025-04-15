@@ -7,6 +7,7 @@
 <h3>Explicação do Código</h3>
 Criamos a classe "player", com atributos de Vector3  mover, Vector3 girar, e foram adicionados métodos de movimento e rotação, o GameObject do player é uma cápsula pega no próprio unity e deixamos ela transparente.
 
+
 A Câmera é filha do GameObject player, criamos o scripty "Raycast" que com botão esquerdo do mouse lança um raio e se o GameObject atingido tiver a tag sapo ele será destruido.
 
 
