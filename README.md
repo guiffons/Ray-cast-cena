@@ -5,7 +5,7 @@
 <h3>Série: 3º Ano Programação de Jogos Digitais</h3>
 <br>
 <h3>Explicação do Código</h3>
-Criamos a classe "player", com atributos de Vector3  mover, Vector3 girar, e foram adicionados métodos de movimento e rotação, o GameObject do player é uma cápsula pega no próprio unity e deixamos ela transparente.
+Criamos a classe "player", com atributos de Vector3  mover, Vector3 girar, e foram adicionados métodos de movimento e rotação,a câmera é filha do GameObject player o GameObject do player é uma cápsula pega no próprio unity e deixamos ela transparente.
 
 using UnityEngine;
 
